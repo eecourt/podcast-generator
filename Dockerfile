@@ -1,8 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip python3-dev build-essential git && \
-    rm -rf /var/lib/apt/lists/*
+# Add before venv creation step
+RUN apt-get update && apt-get install -y python3 python3-venv
 
 RUN python3 -m venv /venv
 ENV PATH="/venv/bin:$PATH"
