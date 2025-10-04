@@ -1,4 +1,4 @@
-name: "Podcast Generator"
+name: "Podcast Generator v3"
 author: "Erin Courtney"
 description: "Generates a feed for a podcast from a YAML file"
 runs:
